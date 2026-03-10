@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -8,7 +7,7 @@
 
 <title>Sandeep Chauhan | Lead Mobile Developer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -16,8 +15,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
+font-family:Inter;
 }
 
 body{
@@ -25,54 +23,36 @@ background:#0f172a;
 color:white;
 }
 
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
 nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 10%;
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
-position:sticky;
-top:0;
-z-index:100;
+padding:18px 0;
 }
 
-nav h3{
+nav h2{
 color:#38bdf8;
 }
 
 nav a{
-color:white;
-margin-left:20px;
+margin-left:18px;
 text-decoration:none;
+color:white;
 font-size:14px;
 }
 
 .hero{
-
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-
-background:linear-gradient(270deg,#0f172a,#1e293b,#0f172a);
-background-size:600% 600%;
-
-animation:gradient 12s ease infinite;
-}
-
-@keyframes gradient{
-
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-
+padding:60px 0 40px;
 }
 
 .hero h1{
-font-size:55px;
+font-size:40px;
 }
 
 .hero span{
@@ -80,109 +60,82 @@ color:#38bdf8;
 }
 
 .hero p{
-margin-top:20px;
-max-width:600px;
+margin-top:10px;
 color:#cbd5f5;
+max-width:500px;
 }
 
 .btn{
-
-margin-top:30px;
-padding:14px 30px;
+display:inline-block;
+margin-top:18px;
+padding:10px 22px;
 background:#38bdf8;
-border:none;
-border-radius:8px;
-font-weight:600;
-color:#020617;
+color:black;
+border-radius:6px;
 text-decoration:none;
+font-weight:600;
 }
 
-section{
-padding:80px 10%;
-}
-
-h2{
-text-align:center;
-color:#38bdf8;
-margin-bottom:50px;
-}
-
-.skills{
-
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:12px;
+margin-top:20px;
 }
 
-.skill{
-
-background:rgba(255,255,255,0.05);
-border:1px solid rgba(255,255,255,0.1);
-padding:15px;
-text-align:center;
-border-radius:10px;
-transition:0.3s;
-}
-
-.skill:hover{
-transform:translateY(-5px);
+.card{
 background:#1e293b;
+padding:14px;
+border-radius:8px;
+font-size:14px;
+text-align:center;
 }
 
 .projects{
-
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:18px;
+margin-top:20px;
 }
 
 .project{
-
-background:rgba(255,255,255,0.05);
-padding:25px;
-border-radius:12px;
-transition:0.3s;
-border:1px solid rgba(255,255,255,0.1);
+background:#1e293b;
+padding:18px;
+border-radius:10px;
+transition:0.2s;
 }
 
 .project:hover{
-transform:translateY(-8px);
+transform:translateY(-4px);
 }
 
 .project a{
 color:#38bdf8;
 text-decoration:none;
+font-size:14px;
 }
 
-.about{
-text-align:center;
-max-width:800px;
-margin:auto;
-line-height:1.7;
+.section{
+margin-top:40px;
 }
 
-.experience{
-
-max-width:800px;
-margin:auto;
-}
-
-.experience ul{
-margin-top:15px;
-line-height:1.7;
+.section h3{
+margin-bottom:10px;
+color:#38bdf8;
 }
 
 .contact{
-
-text-align:center;
+margin-top:30px;
+font-size:14px;
+color:#cbd5f5;
 }
 
 footer{
-
-margin-top:60px;
-padding:25px;
+margin-top:40px;
+padding:20px 0;
+font-size:13px;
+color:#94a3b8;
 text-align:center;
-background:#020617;
 }
 
 </style>
@@ -191,179 +144,123 @@ background:#020617;
 
 <body>
 
+<div class="container">
+
 <nav>
 
-<h3>Sandeep</h3>
+<h2>Sandeep</h2>
 
 <div>
-
-<a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
-
 </div>
 
 </nav>
 
-<section class="hero">
+<div class="hero">
 
-<h1>Hi, I'm <span>Sandeep Chauhan</span></h1>
+<h1>Sandeep <span>Chauhan</span></h1>
 
 <p>
-
-Lead Mobile Developer with 7+ years of experience building
-scalable Android and Flutter applications with modern architecture.
-
+Lead Mobile Developer with 7+ years experience building Android
+and Flutter applications with scalable architecture.
 </p>
 
 <a class="btn" href="Sandeep_Resume.pdf">Download Resume</a>
 
-</section>
+</div>
 
-<section id="about">
+<div id="skills" class="section">
 
-<h2>About Me</h2>
+<h3>Tech Stack</h3>
 
-<div class="about">
+<div class="grid">
 
-Lead Mobile Developer with 7+ years of experience developing
-high-performance mobile applications using Android (Java/Kotlin)
-and Flutter (Dart).
-
-Experienced in designing scalable architecture, integrating
-REST APIs and delivering production-ready applications.
-
-Currently leading a mobile team while contributing to
-architecture design, sprint planning and successful project delivery.
+<div class="card">Flutter</div>
+<div class="card">Android</div>
+<div class="card">Kotlin</div>
+<div class="card">Java</div>
+<div class="card">Dart</div>
+<div class="card">Node.js</div>
+<div class="card">ASP.NET Core</div>
+<div class="card">SQLite</div>
+<div class="card">Firebase</div>
+<div class="card">REST APIs</div>
+<div class="card">MVVM</div>
+<div class="card">Clean Architecture</div>
 
 </div>
 
-</section>
-
-<section id="skills">
-
-<h2>Tech Stack</h2>
-
-<div class="skills">
-
-<div class="skill">Android</div>
-<div class="skill">Flutter</div>
-<div class="skill">Kotlin</div>
-<div class="skill">Java</div>
-<div class="skill">Dart</div>
-<div class="skill">Node.js</div>
-<div class="skill">ASP.NET Core</div>
-<div class="skill">SQLite</div>
-<div class="skill">Firebase</div>
-<div class="skill">MVVM</div>
-<div class="skill">Clean Architecture</div>
-<div class="skill">REST APIs</div>
-<div class="skill">Google Maps</div>
-<div class="skill">Retrofit</div>
-<div class="skill">Android Jetpack</div>
-
 </div>
 
-</section>
+<div id="projects" class="section">
 
-<section id="projects">
-
-<h2>Projects</h2>
+<h3>Projects</h3>
 
 <div class="projects">
 
 <div class="project">
 
-<h3>Medi-Face</h3>
+<h4>Medi-Face</h4>
 
-<p>Diagnostic centre management application with reports and document uploads.</p>
+<p>Diagnostic centre management application.</p>
 
 <a href="https://play.google.com/store/apps/details?id=health.india.pims&hl=en_IN">
-
 Play Store →
-
 </a>
 
 </div>
 
 <div class="project">
 
-<h3>HealthieU</h3>
+<h4>HealthieU</h4>
 
-<p>Insurance and wellness application with claims and payment gateway.</p>
+<p>Insurance wellness platform.</p>
 
 <a href="https://play.google.com/store/apps/details?id=com.wyh.bsideu">
-
 Play Store →
-
 </a>
 
 </div>
 
 <div class="project">
 
-<h3>MediRRConnect</h3>
+<h4>MediRRConnect</h4>
 
-<p>Appointment booking application for LIC RR users.</p>
+<p>Appointment booking system.</p>
 
 <a href="https://play.google.com/store/apps/details?id=health.india.pims.medi_rrconnect">
-
 Play Store →
-
 </a>
 
 </div>
 
-<div class="project">
-
-<h3>Kooky Food Service</h3>
-
-<p>Backend APIs built using Node.js, Express.js and MySQL.</p>
-
 </div>
 
 </div>
 
-</section>
+<div id="contact" class="section">
 
-<section class="experience">
+<h3>Contact</h3>
 
-<h2>Experience</h2>
+<div class="contact">
 
-<h3>HealthIndia Insurance TPA Services</h3>
+Email: chauhansandeep676@gmail.com<br>
+Phone: +91-7021179247<br>
+Location: Mumbai, India
 
-<p>Senior Flutter Developer & Team Lead (2020 - Present)</p>
+</div>
 
-<ul>
-
-<li>Leading team of 5 developers</li>
-<li>Architecting Android & Flutter applications</li>
-<li>REST API integrations</li>
-<li>Production deployment & support</li>
-
-</ul>
-
-</section>
-
-<section id="contact" class="contact">
-
-<h2>Contact</h2>
-
-<p>Email: chauhansandeep676@gmail.com</p>
-
-<p>Phone: +91 7021179247</p>
-
-<p>Location: Mumbai, Maharashtra</p>
-
-</section>
+</div>
 
 <footer>
 
-© 2026 Sandeep Chauhan | Lead Mobile Developer
+© 2026 Sandeep Chauhan
 
 </footer>
 
-</body>
+</div>
 
+</body>
 </html>
